@@ -1,0 +1,307 @@
+<!doctype html><html lang="pt-BR"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=1600"><title>Timeless · Fuji Lounge</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700..900&display=swap');
+@font-face{font-family:'Open Sauce One';font-weight:400;src:url(assets/fonts/open-sauce-one-latin-400-normal.woff2)}
+@font-face{font-family:'Open Sauce One';font-weight:500;src:url(assets/fonts/open-sauce-one-latin-500-normal.woff2)}
+@font-face{font-family:'Open Sauce One';font-weight:700;src:url(assets/fonts/open-sauce-one-latin-700-normal.woff2)}
+@font-face{font-family:'Open Sauce One';font-weight:900;src:url(assets/fonts/open-sauce-one-latin-900-normal.woff2)}
+:root{--cream:#FDF9EE;--green:#0A775A;--rust:#C72A09;--teal:#35B6A6;--char:#272826;--night:#294E47;--rule:#E1C0B0}
+@page{size:1600px 900px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:'Open Sauce One',system-ui,sans-serif;color:var(--char);-webkit-font-smoothing:antialiased}
+.pg{width:1600px;height:900px;position:relative;overflow:hidden;page-break-after:always;break-after:page;padding:84px 110px}
+.cream{background:var(--cream);color:var(--char)}
+.dark{background:var(--char);color:var(--cream)}
+h1,h2,h3,.t{font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;letter-spacing:-.02em;line-height:1.02}
+h2{font-size:64px}
+.k{font-size:15px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--rust)}
+.dark .k{color:var(--teal)}
+p{font-size:23px;line-height:1.5}
+.mut{opacity:.72}
+.foot{position:absolute;left:110px;right:110px;bottom:38px;display:flex;justify-content:space-between;font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.55}
+.rules>*{border-top:2px solid var(--rule);padding:22px 0}
+.rules>*:last-child{border-bottom:2px solid var(--rule)}
+.dark .rules>*{border-color:#4a4d49}
+.kanji{position:absolute;font-family:'Hiragino Mincho ProN','Hiragino Sans',serif;font-weight:900;line-height:.9;color:var(--night);white-space:nowrap}
+/* placeholder duotone */
+.ph{background:radial-gradient(circle at 28% 32%,#f0a07a 0,transparent 34%),radial-gradient(circle at 72% 64%,#C72A09 0,transparent 52%),linear-gradient(135deg,#2a1510,#8a2a12);position:relative}
+.ph:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px);mix-blend-mode:multiply}
+.ph.b{background:radial-gradient(circle at 60% 40%,#ffd7b8 0,transparent 30%),radial-gradient(circle at 30% 75%,#C72A09 0,transparent 50%),linear-gradient(160deg,#1e1512,#6b2410)}
+.ph.c{background:radial-gradient(circle at 40% 60%,#f4b48e 0,transparent 36%),linear-gradient(200deg,#3a1a12,#a63015)}
+/* phone */
+.phone{width:330px;height:660px;border-radius:44px;border:9px solid #0f100f;background:#141514;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.phone .cover{height:190px}
+.phone .av{width:84px;height:84px;border-radius:50%;background:var(--cream);color:var(--rust);display:flex;align-items:center;justify-content:center;font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;font-size:34px;margin:-42px auto 0;position:relative;border:4px solid #141514}
+.phone .nm{text-align:center;color:var(--cream);font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;font-size:22px;margin-top:12px}
+.phone .hd{text-align:center;color:#b9b3a4;font-size:13px;margin-top:4px}
+.phone .lk{margin:12px 22px 0;padding:14px 16px;border:1.5px solid #4a4d49;color:var(--cream);font-size:15px;font-weight:700;display:flex;justify-content:space-between;border-radius:8px}
+.phone .lk.main{background:var(--rust);border-color:var(--rust)}
+.phone .lk span{opacity:.6;font-weight:400}
+.phone .nt{position:absolute;top:8px;left:50%;width:96px;height:24px;margin-left:-48px;background:#0f100f;border-radius:14px;z-index:3}
+/* browser */
+.browser{width:760px;border-radius:14px;overflow:hidden;background:#141514;box-shadow:0 30px 70px rgba(0,0,0,.4);border:1px solid #3a3d39}
+.browser .bar{height:34px;background:#1c1d1c;display:flex;align-items:center;padding:0 14px;gap:7px}
+.browser .bar i{width:10px;height:10px;border-radius:50%;background:#4a4d49;display:block}
+.browser .bar b{margin-left:14px;font-weight:400;font-size:12px;color:#8c8a82;background:#101110;padding:5px 14px;border-radius:6px;flex:1}
+.site-nav{display:flex;justify-content:space-between;padding:16px 26px;color:var(--cream);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.site-hero{height:250px;padding:34px 40px;color:var(--cream);position:relative}
+.site-hero h4{font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;font-size:38px;line-height:1.02;max-width:420px;position:relative;z-index:2}
+.site-hero .bt{position:relative;z-index:2;display:inline-block;margin-top:18px;background:var(--rust);color:#fff;padding:11px 20px;font-size:13px;font-weight:700;letter-spacing:.08em;margin-right:10px;border-radius:6px}
+.site-hero .bt.o{background:transparent;border:1.5px solid var(--cream)}
+.site-strip{display:flex;gap:2px;height:120px}
+.site-strip div{flex:1}
+/* reserva */
+.res{width:420px;background:#141514;color:var(--cream);border-radius:16px;padding:28px;border:1px solid #3a3d39;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.res h5{font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;font-size:24px;margin-bottom:18px}
+.res .f{border:1.5px solid #4a4d49;border-radius:8px;padding:12px 14px;margin-bottom:10px;font-size:14px;display:flex;justify-content:space-between}
+.res .f span{color:#8c8a82}
+.res .hs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.res .hs i{font-style:normal;text-align:center;padding:10px 0;border:1.5px solid #4a4d49;border-radius:6px;font-size:14px}
+.res .hs i.on{background:var(--rust);border-color:var(--rust)}
+.res .go{background:var(--cream);color:var(--char);text-align:center;padding:14px;font-weight:700;font-size:14px;letter-spacing:.08em;border-radius:8px;margin-top:6px}
+/* menu mock */
+.cardapio{width:430px;background:var(--cream);color:var(--char);border-radius:16px;padding:26px 28px;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.cardapio h5{font-family:'Archivo','Arial Black',sans-serif;font-stretch:125%;font-weight:800;font-size:22px;margin-bottom:4px}
+.cardapio .it{display:flex;gap:14px;padding:14px 0;border-top:1.5px solid var(--rule);align-items:center}
+.cardapio .it .ph{width:62px;height:62px;border-radius:8px;flex:none}
+.cardapio .it div.tx{flex:1;font-size:15px;font-weight:700}
+.cardapio .it div.tx small{display:block;font-weight:400;opacity:.65;font-size:12.5px;margin-top:3px}
+.cardapio .it b{font-size:15px}
+.cardapio .cart{background:var(--rust);color:#fff;padding:14px 16px;border-radius:8px;display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-top:6px}
+:root{--acc:#7B3FE4}.phone .lk.main,.site-hero .bt:not(.o),.res .hs i.on,.cardapio .cart{background:var(--acc)!important;border-color:var(--acc)!important;color:#fff!important}html,body{background:#111}.pg{margin:0 auto 24px}</style></head><body><section class="pg dark" style="padding:0;background:#060606">
+    <video src="assets/video/fire-less.mp4" poster="assets/fire-less.jpg" autoplay muted loop playsinline style="position:absolute;right:-170px;top:0;height:900px;width:1600px;object-fit:cover"></video>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,#060606 0,#060606 30%,rgba(6,6,6,.75) 48%,rgba(6,6,6,0) 66%)"></div>
+    <div style="position:absolute;left:110px;top:84px"><img src="assets/logotipo.png" style="filter:brightness(0) invert(1);height:40px"></div>
+    <div style="position:absolute;left:110px;bottom:140px;width:820px">
+      <div class="k" style="margin-bottom:22px">Proposta · Canal direto para restaurantes</div>
+      <h1 style="font-size:76px">O endereço próprio de Fuji Lounge na internet.</h1>
+      <p class="mut" style="margin-top:26px;max-width:640px">Biolink, site, cardápio e reserva em um lugar só, com a sua marca e os dados dos seus clientes na sua mão.</p>
+    </div>
+    <div class="foot" style="color:var(--cream)"><span>Preparado para Fuji Lounge</span><span>Novembro de 2026</span></div>
+  </section>
+<section class="pg cream">
+    <div class="k">O caminho de hoje</div>
+    <h2 style="margin-top:22px;max-width:1000px">Entre o Instagram e a mesa, Fuji Lounge passa a vez para terceiros.</h2>
+    <div class="rules" style="margin-top:56px;width:1380px">
+      <div style="display:flex;gap:40px;align-items:baseline"><span class="t" style="font-size:34px;color:var(--rust);width:60px">1</span><p style="font-size:26px;max-width:1150px">O link da bio é um Linktree, uma página genérica de terceiros, sem a identidade do Fuji.</p></div><div style="display:flex;gap:40px;align-items:baseline"><span class="t" style="font-size:34px;color:var(--rust);width:60px">2</span><p style="font-size:26px;max-width:1150px">Menu, happy hour, agenda de DJs e delivery ficam espalhados em destaques do Instagram.</p></div><div style="display:flex;gap:40px;align-items:baseline"><span class="t" style="font-size:34px;color:var(--rust);width:60px">3</span><p style="font-size:26px;max-width:1150px">São 76 mil seguidores: cada toque na bio que sai para outra plataforma é uma reserva que a casa não registra.</p></div>
+    </div>
+    <p class="mut" style="margin-top:34px;font-size:20px">Cada plataforma intermediária é um lugar onde o cliente desiste, vê o anúncio de outro e deixa dados que não ficam com você.</p>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>02</span></div></section>
+<section class="pg dark">
+    <div class="k">A solução</div>
+    <h2 style="margin-top:22px;max-width:680px;font-size:54px">Um endereço só seu, do toque na bio até a mesa reservada.</h2>
+    <p class="mut" style="margin-top:28px;max-width:640px">Um sistema único: o biolink leva ao site, o site leva à reserva e ao cardápio, e o pedido chega direto ao seu WhatsApp. Sem anúncio de outra marca no caminho.</p>
+    <p style="margin-top:22px;max-width:620px;font-size:18px;color:var(--teal)">O que você vê aqui é uma demonstração com a cara da casa. O sistema final é desenhado sob medida, com as funções que Fuji Lounge precisar.</p>
+    <div style="position:absolute;right:150px;top:84px;transform:rotate(-3deg) scale(.7);transform-origin:top right"><div class="browser"><div class="bar"><i></i><i></i><i></i><b>fujilounge.com.br</b></div>
+  <div class="site-hero" style="background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.15)),url(assets/casas/fuji-01.jpg) center/cover"><div class="site-nav" style="position:absolute;left:0;right:0;top:0;z-index:2"><span style="display:flex;align-items:center;gap:10px;font-weight:800"><img src="assets/casas/fuji-logo.jpg" style="width:30px;height:30px;border-radius:50%">Fuji Lounge</span><span>Cardápio &nbsp; Reservas &nbsp; Pedir &nbsp; Contato</span></div>
+  <div style="height:36px"></div><h4>A melhor noite de Fortaleza.</h4><span class="bt">Reservar mesa</span><span class="bt o">Ver cardápio</span></div>
+  <div class="site-strip"><div style="background:url(assets/casas/fuji-02.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-10.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-02.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-10.jpg) center/cover"></div></div></div></div>
+    <div style="position:absolute;right:70px;top:300px;transform:scale(.8);transform-origin:top right"><div class="phone"><div class="nt"></div>
+  <div class="cover" style="background:url(assets/casas/fuji-12.jpg) center/cover"></div>
+  <div class="av" style="padding:0;overflow:hidden;background:#000"><img src="assets/casas/fuji-logo.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+  <div class="nm">Fuji Lounge</div>
+  <div class="hd">@fujilounge · Aldeota · Cambeba</div>
+  <div class="lk main">Reservar mesa <span>→</span></div>
+  <div class="lk">Ver cardápio <span>→</span></div>
+  <div class="lk">Pedir direto <span>→</span></div>
+  <div class="lk">Como chegar <span>→</span></div>
+  <div class="lk">Eventos e datas especiais <span>→</span></div>
+  </div></div>
+    <div style="position:absolute;right:560px;top:470px;transform:scale(.74);transform-origin:top right"><div class="res"><h5>Reserve sua mesa</h5>
+  <div class="f">Data <span>sex, 14 nov</span></div><div class="f">Pessoas <span>2</span></div><div class="f">Ambiente <span>Lounge</span></div>
+  <div class="hs"><i>19:00</i><i class="on">19:30</i><i>20:00</i><i>20:30</i></div>
+  <div class="go">CONFIRMAR RESERVA</div></div></div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge &nbsp;·&nbsp; <b style="color:var(--rust);opacity:1">Demonstração ilustrativa · o sistema final é personalizado</b></span><span>03</span></div></section>
+<section class="pg cream">
+    <div style="position:absolute;left:150px;top:80px"><div class="phone"><div class="nt"></div>
+  <div class="cover" style="background:url(assets/casas/fuji-12.jpg) center/cover"></div>
+  <div class="av" style="padding:0;overflow:hidden;background:#000"><img src="assets/casas/fuji-logo.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+  <div class="nm">Fuji Lounge</div>
+  <div class="hd">@fujilounge · Aldeota · Cambeba</div>
+  <div class="lk main">Reservar mesa <span>→</span></div>
+  <div class="lk">Ver cardápio <span>→</span></div>
+  <div class="lk">Pedir direto <span>→</span></div>
+  <div class="lk">Como chegar <span>→</span></div>
+  <div class="lk">Eventos e datas especiais <span>→</span></div>
+  </div></div>
+    <div style="position:absolute;left:640px;top:84px;width:860px">
+      <div class="k">01 · Biolink próprio</div>
+      <h2 style="margin-top:22px;font-size:58px">A bio do Instagram com a cara da casa.</h2>
+      <div class="rules" style="margin-top:36px">
+        <div><b>Sem anúncio de terceiros.</b> <span class="mut">O visitante vai direto ao que quer, sem contagem regressiva.</span></div>
+        <div><b>Botões que vendem.</b> <span class="mut">Reservar, ver cardápio, pedir direto, como chegar, eventos.</span></div>
+        <div><b>Você muda em minutos.</b> <span class="mut">Promoção do dia, feriado, nova casa: edita sozinho, sem chamar ninguém.</span></div>
+        <div><b>Você enxerga o que funciona.</b> <span class="mut">Quantos tocaram em reservar, quantos abriram o cardápio.</span></div>
+      </div>
+    </div>
+    <p style="position:absolute;left:150px;bottom:34px;font-size:13px;opacity:.5">DEMONSTRAÇÃO · Fotos e logo tirados do Instagram da casa só para ilustrar. O sistema final é desenhado sob medida, com as funções que a casa precisar.</p>
+    </section>
+<section class="pg dark">
+    <div class="k">02 · Site completo e reserva própria</div>
+    <h2 style="margin-top:22px;font-size:58px;max-width:760px">Reserva que se confirma sozinha, no seu nome.</h2>
+    <div class="rules" style="margin-top:34px;width:640px;font-size:20px">
+      <div><b>Agenda por ambiente e horário</b><br><span class="mut">Salão, varanda, mesa de balcão. Você define limites e regras.</span></div>
+      <div><b>Confirmação e lembrete automáticos</b><br><span class="mut">Menos no-show e menos mensagem para responder à mão.</span></div>
+      <div><b>A lista de clientes é sua</b><br><span class="mut">Nome, telefone e preferências ficam no seu painel.</span></div>
+    </div>
+    <div style="position:absolute;right:90px;top:70px;transform:scale(.86);transform-origin:top right"><div class="browser"><div class="bar"><i></i><i></i><i></i><b>fujilounge.com.br</b></div>
+  <div class="site-hero" style="background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.15)),url(assets/casas/fuji-01.jpg) center/cover"><div class="site-nav" style="position:absolute;left:0;right:0;top:0;z-index:2"><span style="display:flex;align-items:center;gap:10px;font-weight:800"><img src="assets/casas/fuji-logo.jpg" style="width:30px;height:30px;border-radius:50%">Fuji Lounge</span><span>Cardápio &nbsp; Reservas &nbsp; Pedir &nbsp; Contato</span></div>
+  <div style="height:36px"></div><h4>A melhor noite de Fortaleza.</h4><span class="bt">Reservar mesa</span><span class="bt o">Ver cardápio</span></div>
+  <div class="site-strip"><div style="background:url(assets/casas/fuji-02.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-10.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-02.jpg) center/cover"></div><div style="background:url(assets/casas/fuji-10.jpg) center/cover"></div></div></div></div>
+    <div style="position:absolute;right:120px;top:440px;transform:scale(.8);transform-origin:top right"><div class="res"><h5>Reserve sua mesa</h5>
+  <div class="f">Data <span>sex, 14 nov</span></div><div class="f">Pessoas <span>2</span></div><div class="f">Ambiente <span>Lounge</span></div>
+  <div class="hs"><i>19:00</i><i class="on">19:30</i><i>20:00</i><i>20:30</i></div>
+  <div class="go">CONFIRMAR RESERVA</div></div></div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge &nbsp;·&nbsp; <b style="color:var(--rust);opacity:1">Demonstração ilustrativa · o sistema final é personalizado</b></span><span>05</span></div></section>
+<section class="pg cream">
+    <div style="position:absolute;right:140px;top:84px"><div class="cardapio"><div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><img src="assets/casas/fuji-logo.jpg" style="width:38px;height:38px;border-radius:50%"><h5 style="margin:0">Cardápio</h5></div><div style="font-size:13px;opacity:.6;margin-bottom:10px">Peça direto, sem comissão por pedido.</div>
+  <div class="it"><div style="width:62px;height:62px;border-radius:8px;flex:none;background:url(assets/casas/fuji-02.jpg) center/cover"></div><div class="tx">Combinado da casa<small>Seleção do chef</small></div><b>R$ 98</b></div><div class="it"><div style="width:62px;height:62px;border-radius:8px;flex:none;background:url(assets/casas/fuji-10.jpg) center/cover"></div><div class="tx">Hot roll crocante<small>8 peças</small></div><b>R$ 42</b></div><div class="it"><div style="width:62px;height:62px;border-radius:8px;flex:none;background:url(assets/casas/fuji-02.jpg) center/cover"></div><div class="tx">Temaki especial<small>Salmão e cebolinha</small></div><b>R$ 36</b></div>
+  <div class="cart"><span>2 itens</span><span>Enviar pedido · R$ 140</span></div>
+  <div style="font-size:11px;opacity:.5;margin-top:8px">Itens e preços ilustrativos.</div></div></div>
+    <div style="position:absolute;left:110px;top:84px;width:880px">
+      <div class="k">03 · Cardápio e pedido direto</div>
+      <h2 style="margin-top:22px;font-size:58px">Cardápio vivo, pedido sem intermediário.</h2>
+      <div class="rules" style="margin-top:36px;font-size:21px">
+        <div><b>Cardápio editável</b> <span class="mut">com foto, descrição e disponibilidade em tempo real.</span></div>
+        <div><b>QR code nas mesas</b> <span class="mut">o mesmo cardápio no salão, no Instagram e no site.</span></div>
+        <div><b>Pedido direto</b> <span class="mut">o cliente monta o carrinho e o pedido chega ao seu WhatsApp, sem comissão por venda.</span></div>
+        <div><b>Pix e cartão</b> <span class="mut">no plano Signature, com pagamento online integrado.</span></div>
+      </div>
+    </div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge &nbsp;·&nbsp; <b style="color:var(--rust);opacity:1">Demonstração ilustrativa · o sistema final é personalizado</b></span><span>06</span></div></section>
+<section class="pg dark">
+    <div class="k">A conta</div>
+    <h2 style="margin-top:22px;max-width:1250px;font-size:58px">Cada pedido que sai do marketplace fica com você.</h2>
+    <div style="display:flex;gap:110px;margin-top:44px;align-items:flex-end;white-space:nowrap">
+      <div><div class="t" style="font-size:104px;color:var(--teal)">R$ 3.128</div><p class="mut" style="margin-top:6px">por mês deixam de ir para comissão</p></div>
+      <div><div class="t" style="font-size:104px">R$ 37.536</div><p class="mut" style="margin-top:6px">por ano</p></div>
+    </div>
+    <div class="rules" style="margin-top:40px;font-size:19px;width:1250px">
+      <div>Simulação: 800 pedidos por mês, ticket de R$ 85, comissão de 23% (plano com entrega do marketplace).</div>
+      <div>Se 20% desses pedidos passarem a vir do canal direto (160 pedidos, R$ 13.600 de faturamento), a comissão evitada é a de cima.</div>
+    </div>
+    <p class="mut" style="margin-top:14px;font-size:16px">Exemplo ilustrativo. Na reunião, refazemos a conta com os números reais de Fuji Lounge.</p>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>07</span></div></section>
+<section class="pg cream" style="padding-top:70px">
+    <div class="k">Quem já confiou na Timeless</div>
+    <h2 style="margin-top:16px;font-size:50px;max-width:1300px">Marcas que entregaram a imagem e o digital para a gente cuidar.</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:var(--rule);margin-top:40px;border:3px solid var(--rule)">
+      <div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/doca.png" style="max-width:62%;max-height:96px;transform:scale(1.5);"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/quezado.png" style="max-width:62%;max-height:96px;"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/cm.png" style="max-width:62%;max-height:96px;"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/moopy.png" style="max-width:62%;max-height:96px;"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/ferrovia.png" style="max-width:62%;max-height:96px;"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/core.jpg" style="max-width:62%;max-height:96px;transform:scale(2.6);"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/dragao.png" style="max-width:62%;max-height:96px;transform:scale(1.35);"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/guanabara-k.jpg" style="max-width:62%;max-height:96px;filter:invert(1);max-height:70px;"></div><div style="background:#fff;overflow:hidden;height:150px;display:flex;align-items:center;justify-content:center"><img src="assets/logos/centro-fashion.png" style="max-width:62%;max-height:96px;max-height:80px;"></div>
+    </div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>08</span></div></section>
+<section class="pg dark" style="padding-top:70px">
+    <div class="k">Sistemas que criamos e entregamos · 1/2</div>
+    <h2 style="margin-top:16px;font-size:50px;max-width:1300px">Relatórios de resultado que o cliente tem vontade de abrir.</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px">
+      <div>
+      <div>
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:#0b2a1c">
+        <div style="position:absolute;inset:0;background:url(assets/sys/dragao-poster.jpg) center/cover;opacity:.9"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65))"></div>
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="width:86%"><div style="border:9px solid #0e0e0e;border-bottom-width:13px;border-radius:12px 12px 0 0;aspect-ratio:16/10;overflow:hidden;background:#000"><video src="assets/video/dragao.mp4" poster="assets/sys/dragao-b.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div><div style="height:11px;margin:0 -7%;background:linear-gradient(#d9d9d9,#8a8a8a);border-radius:0 0 14px 14px"></div></div></div>
+        
+      </div>
+      </div>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Relatório interativo</span><br><b>Dragão</b><br><span class="mut" style="font-size:15px">Meta, TikTok e Google numa leitura só, com abertura em vídeo.</span></div>
+      <div style="margin-top:8px"></div>
+    </div><div>
+      <div>
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:#0a0e14">
+        <div style="position:absolute;inset:0;background:url(assets/sys/mercedes-poster.jpg) center/cover;opacity:.9"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65))"></div>
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="width:86%"><div style="border:9px solid #0e0e0e;border-bottom-width:13px;border-radius:12px 12px 0 0;aspect-ratio:16/10;overflow:hidden;background:#000"><video src="assets/video/mercedes.mp4" poster="assets/sys/mercedes-b.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div><div style="height:11px;margin:0 -7%;background:linear-gradient(#d9d9d9,#8a8a8a);border-radius:0 0 14px 14px"></div></div></div>
+        
+      </div>
+      </div>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Relatório interativo</span><br><b>Guanabara Diesel · Mercedes-Benz</b><br><span class="mut" style="font-size:15px">Conversas no WhatsApp por estado, com comparação ano a ano.</span></div>
+      <div style="margin-top:8px"></div>
+    </div><div>
+      <div>
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:#0a0a0a">
+        <div style="position:absolute;inset:0;background:url(assets/sys/ferrovia-first.jpg) center/cover;opacity:.9"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65))"></div>
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="width:86%"><div style="border:9px solid #0e0e0e;border-bottom-width:13px;border-radius:12px 12px 0 0;aspect-ratio:16/10;overflow:hidden;background:#000"><video src="assets/video/ferrovia.mp4" poster="assets/sys/ferrovia-b.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div><div style="height:11px;margin:0 -7%;background:linear-gradient(#d9d9d9,#8a8a8a);border-radius:0 0 14px 14px"></div></div></div>
+        
+      </div>
+      </div>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Relatório interativo</span><br><b>Ferrovia Solar &amp; Grau</b><br><span class="mut" style="font-size:15px">Campanhas das lojas e datas comerciais, mês a mês.</span></div>
+      <div style="margin-top:8px"></div>
+    </div>
+    </div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>09</span></div></section>
+<section class="pg dark" style="padding-top:70px">
+    <div class="k">Sistemas que criamos e entregamos · 2/2</div>
+    <h2 style="margin-top:16px;font-size:50px;max-width:1300px">Sites, biolinks e jogos no ar, funcionando.</h2>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:16px;margin-top:36px">
+      <div>
+      <a href="https://moopy.com.br" style="display:block;text-decoration:none">
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(circle at 50% 30%,#c4501a,#2a0d05 70%)">
+        
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="width:92%"><div style="border:9px solid #0e0e0e;border-bottom-width:13px;border-radius:12px 12px 0 0;aspect-ratio:16/10;overflow:hidden;background:#000"><video src="assets/video/moopy.mp4" poster="assets/sys/moopy-a.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div><div style="height:11px;margin:0 -7%;background:linear-gradient(#d9d9d9,#8a8a8a);border-radius:0 0 14px 14px"></div></div></div>
+        
+      </div>
+      </a>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Site</span><br><b>Moopy</b><br><span class="mut" style="font-size:15px">Design e ajustes do site da marca, incluindo a campanha de Black Friday.</span></div>
+      <div style="margin-top:8px"><a href="https://moopy.com.br" style="color:var(--teal);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em">ABRIR ↗</a></div>
+    </div><div>
+      <a href="https://quezado-brasil-bio-v2.netlify.app" style="display:block;text-decoration:none">
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(circle at 50% 30%,#3a3f74,#0d0f22 72%)">
+        
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="height:320px;aspect-ratio:9/19;border:8px solid #0e0e0e;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.45)"><video src="assets/video/quezado.mp4" poster="assets/sys/quezado-a.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div></div>
+        
+      </div>
+      </a>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Biolink</span><br><b>Quezado &amp; Brasil</b><br><span class="mut" style="font-size:15px">Biolink próprio: atendimento, assuntos e como chegar.</span></div>
+      <div style="margin-top:8px"><a href="https://quezado-brasil-bio-v2.netlify.app" style="color:var(--teal);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em">ABRIR ↗</a></div>
+    </div><div>
+      <a href="https://moopy-no-ponto.pages.dev/" style="display:block;text-decoration:none">
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(circle at 50% 30%,#2f5a3e,#08130c 72%)">
+        
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="height:320px;aspect-ratio:3/4;border:8px solid #0e0e0e;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.45)"><video src="assets/video/noponto.mp4" poster="assets/sys/np-home.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div></div>
+        
+      </div>
+      </a>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Jogo de evento</span><br><b>Moopy · No Ponto</b><br><span class="mut" style="font-size:15px">Encher a garrafa no ponto certo, com pontuação e cadastro.</span></div>
+      <div style="margin-top:8px"><a href="https://moopy-no-ponto.pages.dev/" style="color:var(--teal);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em">ABRIR ↗</a></div>
+    </div><div>
+      <a href="https://jogodamemoria-cmmaquinas.netlify.app/" style="display:block;text-decoration:none">
+      <div style="height:380px;position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(circle at 50% 30%,#1f8a5c,#063b26 72%)">
+        
+        <div style="position:relative;display:flex;justify-content:center;width:100%;padding-bottom:26px"><div style="height:320px;aspect-ratio:9/16;border:8px solid #0e0e0e;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.45)"><video src="assets/video/cm.mp4" poster="assets/sys/cm-a.jpg" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:top"></video></div></div>
+        
+      </div>
+      </a>
+      <div style="margin-top:16px;font-size:17px;line-height:1.35"><span class="k" style="font-size:12px">Jogo de evento</span><br><b>CM Máquinas · Jogo da Memória</b><br><span class="mut" style="font-size:15px">Jogo em totem para feiras, com cadastro e brinde.</span></div>
+      <div style="margin-top:8px"><a href="https://jogodamemoria-cmmaquinas.netlify.app/" style="color:var(--teal);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em">ABRIR ↗</a></div>
+    </div>
+    </div>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>10</span></div></section>
+<section class="pg cream">
+    <div class="k">Investimento</div>
+    <h2 style="margin-top:22px;font-size:46px">Três formatos, do mais simples ao sob medida.</h2>
+    <div style="display:flex;margin-top:30px;margin-left:-34px"><div style="flex:1;padding:0 34px;border-left:2px solid var(--rule)">
+      <div class="k" style="color:#8c8a82">&nbsp;</div>
+      <h3 style="font-size:36px;margin-top:10px">Essencial</h3>
+      <p class="mut" style="font-size:17px;margin-top:10px;min-height:56px">Quem quer largar o Linktree e ter cardápio e links próprios, rápido.</p>
+      <div class="t" style="font-size:42px;margin-top:8px;">R$ 150<span style="font-size:17px;font-weight:700"> /mês</span></div>
+      <div style="font-size:17px;margin-top:4px;opacity:.75">+ R$ 1.300 de implantação, uma vez</div>
+      <ul style="margin-top:22px;padding-left:20px;font-size:14.5px;line-height:1.4"><li style="margin-bottom:5px">Biolink próprio, com a sua marca e sem anúncio de terceiros</li><li style="margin-bottom:5px">Cardápio digital editável, com fotos e QR code para as mesas</li><li style="margin-bottom:5px">Botões de reservar, pedir, localização e WhatsApp</li><li style="margin-bottom:5px">Painel simples com cliques por botão</li><li style="margin-bottom:5px">Hospedagem, domínio e suporte inclusos</li></ul></div><div style="flex:1;padding:0 34px;border-left:2px solid var(--rule)">
+      <div class="k" style="color:#8c8a82">&nbsp;</div>
+      <h3 style="font-size:36px;margin-top:10px">Completo</h3>
+      <p class="mut" style="font-size:17px;margin-top:10px;min-height:56px">Quem quer um canal direto de verdade: reserva, cardápio e pedido no próprio site.</p>
+      <div class="t" style="font-size:42px;margin-top:8px;">R$ 350<span style="font-size:17px;font-weight:700"> /mês</span></div>
+      <div style="font-size:17px;margin-top:4px;opacity:.75">+ R$ 3.500 de implantação, uma vez</div>
+      <ul style="margin-top:22px;padding-left:20px;font-size:14.5px;line-height:1.4"><li style="margin-bottom:5px">Tudo do Essencial</li><li style="margin-bottom:5px">Site completo em até 5 páginas, no seu domínio</li><li style="margin-bottom:5px">Reserva online com confirmação e lembrete automático</li><li style="margin-bottom:5px">Pedido direto com carrinho, enviado ao seu WhatsApp</li><li style="margin-bottom:5px">Painel de reservas e lista de clientes (a base é sua)</li><li style="margin-bottom:5px">Relatório mensal com reservas, pedidos e origem do cliente</li></ul></div><div style="flex:1;padding:0 34px;border-left:2px solid var(--rule)">
+      <div class="k" style="color:var(--rust)">Indicado para a casa</div>
+      <h3 style="font-size:36px;margin-top:10px">Signature</h3>
+      <p class="mut" style="font-size:17px;margin-top:10px;min-height:56px">Casas que querem uma presença à altura do que servem à mesa.</p>
+      <div class="t" style="font-size:42px;margin-top:8px;color:var(--rust)">R$ 900<span style="font-size:17px;font-weight:700"> /mês</span></div>
+      <div style="font-size:17px;margin-top:4px;opacity:.75">+ R$ 9.000 de implantação, uma vez</div>
+      <ul style="margin-top:22px;padding-left:20px;font-size:14.5px;line-height:1.4"><li style="margin-bottom:5px">Tudo do Completo</li><li style="margin-bottom:5px">Direção de arte sob medida e fotografia do cardápio (1 diária)</li><li style="margin-bottom:5px">Reservas por ambiente, lista de espera, eventos e datas especiais</li><li style="margin-bottom:5px">Pedido direto com Pix e cartão (taxas do meio de pagamento à parte)</li><li style="margin-bottom:5px">CRM e campanhas para clientes recorrentes</li><li style="margin-bottom:5px">Estratégia de conteúdo e mídia ligada ao canal direto (sob consulta)</li></ul></div></div>
+    <p style="position:absolute;left:110px;bottom:58px;font-size:14px;opacity:.6">Valores de referência, em reais: o escopo e o preço finais são ajustados ao que a casa precisa. Mensalidade inclui hospedagem, domínio, suporte e pequenas atualizações. Mídia paga e taxas de meios de pagamento não estão incluídas.</p>
+    <div class="foot"><span>Timeless · Proposta para Fuji Lounge</span><span>11</span></div></section>
+<section class="pg dark" style="padding:0">
+    <div class="kanji" style="font-size:760px;left:760px;top:-60px">超</div>
+    <div style="position:absolute;left:110px;top:110px;width:900px">
+      <div class="k">Próximo passo</div>
+      <h1 style="font-size:60px;margin-top:22px">Vinte minutos para refazer a conta com os números de Fuji Lounge.</h1>
+      <p class="mut" style="margin-top:30px;max-width:700px">Conversamos, mostramos como ficaria o biolink e o site da casa e você decide com calma.</p>
+    </div>
+      </section></body></html>
