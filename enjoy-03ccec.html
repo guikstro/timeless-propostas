@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=1600"><title>Timeless · Enjoy Sushi</title><style>
+<!doctype html><html lang="pt-BR"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Timeless · Enjoy Sushi</title><style>
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700..900&display=swap');
 @font-face{font-family:'Open Sauce One';font-weight:400;src:url(assets/fonts/open-sauce-one-latin-400-normal.woff2)}
 @font-face{font-family:'Open Sauce One';font-weight:500;src:url(assets/fonts/open-sauce-one-latin-500-normal.woff2)}
@@ -68,7 +68,33 @@ p{font-size:23px;line-height:1.5}
 .cardapio .it div.tx small{display:block;font-weight:400;opacity:.65;font-size:12.5px;margin-top:3px}
 .cardapio .it b{font-size:15px}
 .cardapio .cart{background:var(--rust);color:#fff;padding:14px 16px;border-radius:8px;display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-top:6px}
-:root{--acc:#F2E21B}.phone .lk.main,.site-hero .bt:not(.o),.res .hs i.on,.cardapio .cart{background:var(--acc)!important;border-color:var(--acc)!important;color:#111!important}html,body{background:#111}.pg{margin:0 auto 24px}</style></head><body><section class="pg dark" style="padding:0;background:#060606">
+:root{--acc:#F2E21B}.phone .lk.main,.site-hero .bt:not(.o),.res .hs i.on,.cardapio .cart{background:var(--acc)!important;border-color:var(--acc)!important;color:#111!important}html,body{background:#111;margin:0}
+@media (min-width:900px){.pg{margin:0;zoom:calc(100vw / 1600px)}body{overflow-x:hidden}}
+@media (max-width:899px){
+ .pg{width:100%!important;height:auto!important;min-height:0!important;padding:40px 20px 56px!important;overflow:hidden}
+ .pg [style*="position:absolute"]{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;width:auto!important;max-width:100%!important}
+ .pg .kanji{display:none}
+ .pg > div[style*="background:url(assets/fire-less"], .pg > video{position:relative!important;width:100%!important;height:56vw!important;margin:-40px -20px 20px;width:calc(100% + 40px)!important;max-width:none!important}
+ .pg > div[style*="linear-gradient(90deg,#060606"]{display:none}
+ .pg h1{font-size:36px!important}
+ .pg h2{font-size:30px!important;max-width:100%!important}
+ .pg p{font-size:17px!important;max-width:100%!important}
+ .pg .k{font-size:12px!important}
+ .pg [style*="display:grid"]{grid-template-columns:1fr!important;height:auto!important;gap:22px!important}
+ .pg [style*="display:flex"]:not(.phone *):not(.browser *):not(.res *):not(.cardapio *){flex-wrap:wrap!important}
+ .pg [style*="width:1"],.pg [style*="width:6"],.pg [style*="width:7"],.pg [style*="width:8"],.pg [style*="width:9"]{width:auto!important;max-width:100%!important}
+ .pg .rules{width:auto!important}
+ .pg .rules>*{flex-wrap:wrap}
+ .pg .t[style*="font-size:1"]{font-size:56px!important}
+ .browser{width:100%!important}.browser .site-hero{height:auto;min-height:200px}.site-hero h4{font-size:24px}
+ .res,.cardapio{width:100%!important}
+ .phone{margin:0 auto}
+ .pg > div:has(> .phone),.pg > div:has(> .browser),.pg > div:has(> .res),.pg > div:has(> .cardapio){margin-top:24px}
+ .foot{position:relative!important;left:auto;right:auto;bottom:auto;margin-top:36px;flex-direction:column;gap:6px;font-size:10px}
+ .pg [style*="margin-left:-34px"]{margin-left:0!important;flex-direction:column}
+ .pg [style*="margin-left:-34px"]>div{padding:20px 0!important;border-left:0!important;border-top:2px solid var(--rule)}
+ .pg [style*="height:380px"],.pg [style*="height:330px"]{height:auto!important;min-height:300px;padding-top:20px}
+}</style></head><body><section class="pg dark" style="padding:0;background:#060606">
     <video src="assets/video/fire-less.mp4" poster="assets/fire-less.jpg" autoplay muted loop playsinline style="position:absolute;right:-170px;top:0;height:900px;width:1600px;object-fit:cover"></video>
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,#060606 0,#060606 30%,rgba(6,6,6,.75) 48%,rgba(6,6,6,0) 66%)"></div>
     <div style="position:absolute;left:110px;top:84px"><img src="assets/logotipo.png" style="filter:brightness(0) invert(1);height:40px"></div>
